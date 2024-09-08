@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<packaging>jar</packaging>
+<version>1.1.0</version>
+<groupId>loveHome-Rent</groupId>
+<artifactId>loveHome-Rent</artifactId>
+<name>loveHome-Rent</name>
+<url>http://maven.apache.org</url>
+
+<repositories>
+    <repository>
+        <id>alimaven</id>
+        <url>https://maven.aliyun.com/repository/public</url>
+    </repository>
+</repositories>
+
+<pluginRepositories>
+    <pluginRepository>
+        <id>alimaven</id>
+        <url>https://maven.aliyun.com/repository/public</url>
+    </pluginRepository>
+</pluginRepositories>
+
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.7.RELEASE</version>
+    <relativePath/>
+</parent>
+
+
+<properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+    <druid.version>1.2.8</druid.version>
+    <lombok.version>1.18.22</lombok.version>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
+    <hutool-all.version>5.7.16</hutool-all.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>4.12</junit.version>
+    <mysql.version>5.1.41</mysql.version>
+    <jstl.version>1.2</jstl.version>
+    <log4j.version>1.2.17</log4j.version>
+    <slf4j.version>1.7.25</slf4j.version>
+    <taglibs-standard.version>1.2.5</taglibs-standard.version>
+    <commons-fileupload.version>1.3.3</commons-fileupload.version>
+    <commons-io.version>2.5</commons-io.version>
+    <commons-codec.version>1.10</commons-codec.version>
+    <taglibs.standard.version>1.1.2</taglibs.standard.version>
+</properties>
+
+
+<dependencies>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <!--mybatis-->
+    <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>2.2.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+    <!--mybatis-plus end-->
+
+    <!-- mysql-->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+
+
+    <!-- druid数据源 -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid-spring-boot-starter</artifactId>
+        <version>${druid.version}</version>
+    </dependency>
+
+    <!-- Lombok -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+    </dependency>
+
+
+    <!-- commons-lang3工具包 -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+    </dependency>
+
+    <!-- hutool工具包 -->
+    <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool-all.version}</version>
+    </dependency>
+
+    <!--序列化-->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.78</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>31.0.1-jre</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.8.9</version>
+    </dependency>
+
+    <!-- 邮件 -->
+    <dependency>
+        <groupId>io.github.biezhi</groupId>
+        <artifactId>oh-my-email</artifactId>
+        <version>0.0.4</version>
+    </dependency>
+
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-jasper</artifactId>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>1.4</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
+        <version>4.4.14</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.13</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+
+    <!--./mysql-connector-java -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
+    </dependency>
+    <!-- 阿里数据库连接池 -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+        <version>${druid.version}</version>
+    </dependency>
+    <!-- mybatis 分页 -->
+    <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper</artifactId>
+        <version>5.1.2</version>
+    </dependency>
+    <!-- JSTL标签类 -->
+    <dependency>
+        <groupId>jstl</groupId>
+        <artifactId>jstl</artifactId>
+        <version>${jstl.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>${taglibs.standard.version}</version>
+    </dependency>
+    <!-- 阿里短信服务 -->
+    <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>aliyun-java-sdk-core</artifactId>
+        <version>4.5.16</version>
+    </dependency>
+    <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.62</version>
+    </dependency>
+    <!-- echart 统计图 -->
+    <dependency>
+        <groupId>org.jfree</groupId>
+        <artifactId>jcommon</artifactId>
+        <version>1.0.23</version>
+    </dependency>
+    <dependency>
+        <artifactId>jfreechart</artifactId>
+        <groupId>org.jfree</groupId>
+        <version>1.0.19</version>
+    </dependency>
+
+
+
+</dependencies>
+
+<build>
+    <finalName>houserent</finalName>
+    <resources>
+        <!--引入配置文件-->
+        <resource>
+            <directory>src/main/resources</directory>
+            <filtering>false</filtering>
+        </resource>
+        <!--引入静态文件-->
+        <resource>
+            <directory>src/main/webapp</directory>
+            <targetPath>META-INF/resources</targetPath>
+            <filtering>false</filtering>
+            <includes>
+                <include>**/**</include>
+            </includes>
+        </resource>
+    </resources>
+
+
+    <plugins>
+
+
+    </plugins>
+
+
+</build>
+</project>
+
