@@ -13,7 +13,7 @@
 [https://www.bilibili.com/video/BV1CN4y1v7H7/](https://www.bilibili.com/video/BV1CN4y1v7H7/)**
 
 **毕业设计所有选题地址：
-[https://github.com/ynwynw/allProject](https://github.com/ynwynw/allProject)**
+[https://github.com/zhengjianzhong0107/allProject](https://github.com/zhengjianzhong0107/allProject)**
 
 ## 基于Java+Springboot的房屋租赁管理系统(源代码+数据库+9000字文档)121
 
